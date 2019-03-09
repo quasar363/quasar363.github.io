@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <script src="assets/script.js"></script>
+    </head>
+
+    <body>
+        <div class="sidenav">
+            <img src="assets/logo.png">
+            <button type="button" onclick="redirect('index')">home</button>
+            <button type="button" onclick="this.blur();">products</button>
+            <button type="button" onclick="redirect('basket')">basket</button>
+            <button type="button" onclick="redirect('contact')">contact</button>
+            <hr>
+            <input type="text" name="name_filter" placeholder="search" size="16" maxlength="16">
+            <button type="button" onclick="this.blur();swap(this)">avalible: any</button>
+            <button type="button" onclick="this.blur();swap(this)">synthetic: any</button>
+        </div>
+
+        <div class="grid">
+            <div class="product">
+                <button type="button" onclick="redirect('c-liquid')">c-liquid</button>
+            </div>
+        </div>
+    </body>
+</html>

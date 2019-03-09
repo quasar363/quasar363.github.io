@@ -1,0 +1,174 @@
+@font-face {
+  font-family: RegularFont;
+  src: url("font-regular.otf");
+}
+
+@font-face {
+  font-family: BoldFont;
+  src: url("font-bold.otf");
+}
+
+body {
+    font-family: RegularFont;
+    background-color: #ffffff;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    background-color: #e6e6e6;
+    padding: 10px;
+    height: 20px;
+}
+
+.total {
+    background-color: #e6e6e6;
+    width: 100%;
+    padding-top: 15px;
+    height: 25px;
+    margin-top: 7px;
+    margin-left: 3px;
+    text-align: center;
+}
+
+.find_button {
+    color: #a3ffec;
+    height: 40px;
+    width: 60px;
+    background-color: #55ccb4;
+    border-radius: 0px;
+    border: 0;
+    float: right;
+}
+
+.find_button:hover {
+    background-color: #5ee0c6;
+}
+
+.sidenav {
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+    background: #4f4f4f;
+    overflow-x: hidden;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.sidenav > input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #e2e2e2;
+    text-align: center;
+    background-color: #5b5b5b;
+    border-radius: 0px;
+    border: 0px;
+    height: 25px;
+    width: 210px;
+    font-family: BoldFont;
+}
+
+.sidenav > button {
+    color: #e2e2e2;
+    background-color: transparent;
+    width: inherit;
+    border: 0;
+    height: 30px;
+    font-family: BoldFont;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.sidenav > button:hover {
+    background-color: #636363;
+}
+
+.main {
+    margin-top: 20px;
+    margin-left: 275px;
+    font-size: 28px;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+.grid {
+    display: inline-block;;
+    flex-wrap: wrap;
+    margin-left: 280px;
+    margin-right: 15px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(420px, auto);
+    grid-gap: 2em;
+}
+
+.product {
+    background-image: url('product.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.product > button {
+    color: #a3ffec;
+    background-color: #55ccb4;
+    width: inherit;
+    border: 0;
+    height: 40px;
+    margin-top: 300px;
+    font-family: BoldFont;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.product > button:hover {
+    background-color: #5ee0c6;
+}
+
+.data_button {
+    width: 100%;
+    color: #a3ffec;
+    border: 0;
+    height: 35px;
+    background-color: #55ccb4;
+    font-family: BoldFont;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.data_button:hover {
+    background-color: #5ee0c6;
+}
+
+.data_field {
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #000000;
+    text-align: center;
+    background-color: #e6e6e6;
+    border-radius: 0px;
+    border: 0px;
+    height: 35px;
+    font-family: RegularFont;
+}
+
+.code {
+    background-color: #e6e6e6;
+    padding: 5px;
+    margin: 3px;
+}
+
+.code > label {
+    max-width: 100%;
+    word-wrap: break-word
+}

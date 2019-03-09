@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <script src="assets/script.js"></script>
+    </head>
+
+    <body>
+        <div class="sidenav">
+            <img src="assets/logo.png">
+            <button type="button" onclick="redirect('index')">home</button>
+            <button type="button" onclick="redirect('products')">products</button>
+            <button type="button" onclick="redirect('basket')">basket</button>
+            <button type="button" onclick="this.blur();">contact</button>
+        </div>
+
+        <div class="main"><br>
+            <h2 align="center">contact</h2>
+            contact us at quasar363@protonmail.com.<br><br><br>
+            <input class="data_field" type="text" id="encoded_message" size="16" placeholder="encoded message" onkeydown="if (event.keyCode == 13) { decode(); }"><br>
+            <button class="data_button" type="button" onclick="this.blur();decode('encoded_message', 'decoded_label', 's3cr3tstr1ng');">decode</button><br><br><br>
+
+            <label id="decoded_label"></label>
+        </div>
+    </body>
+</html>

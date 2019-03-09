@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <script src="assets/script.js"></script>
+    </head>
+
+    <body onload="generate('generated_label', 'n0ts0s3cr3t');">
+        <div class="sidenav">
+            <img src="assets/logo.png">
+            <button type="button" onclick="redirect('index')">home</button>
+            <button type="button" onclick="redirect('products')">products</button>
+            <button type="button" onclick="redirect('basket')">basket</button>
+            <button type="button" onclick="redirect('contact')">contact</button>
+        </div>
+
+        <div class="main"><br>
+            <h2 align="center">order</h2>
+            to place your order just copy the code below and send us an email (quasar363@protonmail.com) containing that code. note that the email you use to order will receive the shipping confirmation (which can be decoded <a href="contact.html">here</a>).<br><br><br>
+            <div class="code">
+                <label id="generated_label"></label>
+            </div>
+            <button class="data_button" type="button" onclick="this.blur();copy();">copy</button><br><br><br>
+            <button class="data_button" type="button" onclick="this.blur();done();">done</button><br><br><br>
+        </div>
+    </body>
+</html>

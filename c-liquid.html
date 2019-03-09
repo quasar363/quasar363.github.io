@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <script src="assets/script.js"></script>
+    </head>
+
+    <body>
+        <div class="sidenav">
+            <img src="assets/logo.png">
+            <button type="button" onclick="redirect('index')">home</button>
+            <button type="button" onclick="redirect('products')">products</button>
+            <button type="button" onclick="redirect('basket')">basket</button>
+            <button type="button" onclick="redirect('contact')">contact</button>
+        </div>
+
+        <div class="main"><br>
+            <h2 align="center">c-liquid</h2><br><br>
+
+            <h3 align="center">5 millilitre bottle</h3>
+            <table>
+                <tr>
+                    <th>quantity</th>
+                    <th>price</th>
+                </tr>
+                <tr>
+                    <td>1 bottle</td>
+                    <td>15.00 euros</td>
+                </tr>
+                <tr>
+                    <td>2 bottles</td>
+                    <td>14.50 euros</td>
+                </tr>
+                <tr>
+                    <td>7 bottles</td>
+                    <td>13.50 euros</td>
+                </tr>
+                <tr>
+                    <td>10 bottles</td>
+                    <td>13.00 euros</td>
+                </tr>
+                <tr>
+                    <td>20 bottles</td>
+                    <td>11.50 euros</td>
+                </tr>
+            </table><br>
+
+            <input class="data_field" type="text" id="quantity_field_5ml" size="16" maxlength="16" placeholder="desired quantity" onkeydown="if (event.keyCode == 13) { add_to_basket('c-liquid (5 millilitre)', this); }">
+            <button class="data_button" type="button" onclick="this.blur();add_to_basket('c-liquid (5 millilitre)', document.getElementById('quantity_field_5ml'))">add to basket</button><br><br><br><br>
+
+            <h3 align="center">50 millilitre bottle</h3>
+            <table>
+                <tr>
+                    <th>quantity</th>
+                    <th>price</th>
+                </tr>
+                <tr>
+                    <td>1 bottle</td>
+                    <td>90.00 euros</td>
+                </tr>
+                <tr>
+                    <td>2 bottles</td>
+                    <td>85.00 euros</td>
+                </tr>
+                <tr>
+                    <td>7 bottles</td>
+                    <td>80.00 euros</td>
+                </tr>
+                <tr>
+                    <td>10 bottles</td>
+                    <td>75.00 euros</td>
+                </tr>
+                <tr>
+                    <td>20 bottles</td>
+                    <td>60.00 euros</td>
+                </tr>
+            </table><br>
+
+            <input class="data_field" type="text" id="quantity_field_50ml" size="16" maxlength="16" placeholder="desired quantity" onkeydown="if (event.keyCode == 13) { add_to_basket('c-liquid (50 millilitre)', this); }">
+            <button class="data_button" type="button" onclick="this.blur();add_to_basket('c-liquid (50 millilitre)', document.getElementById('quantity_field_50ml'))">add to basket</button><br><br><br><br>
+
+            <h3 align="center">100 millilitre bottle</h3>
+            <table>
+                <tr>
+                    <th>quantity</th>
+                    <th>price</th>
+                </tr>
+                <tr>
+                    <td>1 bottle</td>
+                    <td>150.00 euros</td>
+                </tr>
+                <tr>
+                    <td>2 bottles</td>
+                    <td>140.00 euros</td>
+                </tr>
+                <tr>
+                    <td>7 bottles</td>
+                    <td>125.00 euros</td>
+                </tr>
+                <tr>
+                    <td>10 bottles</td>
+                    <td>115.00 euros</td>
+                </tr>
+                <tr>
+                    <td>20 bottles</td>
+                    <td>100.00 euros</td>
+                </tr>
+            </table><br>
+
+            <input class="data_field" type="text" id="quantity_field_100ml" size="16" maxlength="16" placeholder="desired quantity" onkeydown="if (event.keyCode == 13) { add_to_basket('c-liquid (100 millilitre)', this); }">
+            <button class="data_button" type="button" onclick="this.blur();add_to_basket('c-liquid (100 millilitre)', document.getElementById('quantity_field_100ml'))">add to basket</button><br><br><br>
+        </div>
+    </body>
+</html>

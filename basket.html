@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <script src="assets/script.js"></script>
+    </head>
+
+    <body onload="update_basket();update_cards();update_shipping();">
+        <div class="sidenav">
+            <img src="assets/logo.png">
+            <button type="button" onclick="redirect('index')">home</button>
+            <button type="button" onclick="redirect('products')">products</button>
+            <button type="button" onclick="this.blur();">basket</button>
+            <button type="button" onclick="redirect('contact')">contact</button>
+        </div>
+
+        <div class="main"><br>
+            <h2 align="center">basket</h2>
+            <table id="basket_list"></table>
+            <div class="total"><label id="total"></label></div><br><br><br><br>
+
+            <h2 align="center">payment</h2>
+            <table id="cards_list"></table>
+            <input class="data_field" type="text" id="card_field" size="16" maxlength="19" placeholder="code" onkeydown="if (event.keyCode == 13) { add_card(); }">
+            <button class="data_button" type="button" onclick="this.blur();add_card()">add card</button><br><br>
+            pay fast and easy using paysafe card. if you prefer another method of payment feel free to contact us.<br><br><br><br>
+
+            <h2 align="center">shipping</h2>
+            <input class="data_field" onchange="safe_field('first_name_field')" type="text" id="first_name_field" size="16" maxlength="32" placeholder="first name">
+            <input class="data_field" onchange="safe_field('last_name_field')" type="text" id="last_name_field" size="16" maxlength="32" placeholder="last name">
+            <input class="data_field" onchange="safe_field('country_field')" type="text" id="country_field" size="16" maxlength="32" placeholder="country">
+            <input class="data_field" onchange="safe_field('state_field')" type="text" id="state_field" size="16" maxlength="32" placeholder="state / region"><br>
+            <input class="data_field" onchange="safe_field('city_field')" type="text" id="city_field" size="16" maxlength="32" placeholder="city">
+            <input class="data_field" onchange="safe_field('address_field')" type="text" id="address_field" size="16" maxlength="32" placeholder="street + house number">
+
+            <button class="data_button" type="button" onclick="this.blur();order();">continue</button><br>
+            <ul id="missing_label"></ul><br>
+
+            <br><br>
+            <label id="ciphered_data"></label>
+        </div>
+    </body>
+</html>
